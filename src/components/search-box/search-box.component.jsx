@@ -1,0 +1,17 @@
+import { Component } from 'react';
+import './search-box.styles.css';
+import Card from '../card/card.component'
+
+const SearchBox = ({className, placeholder, onChangeHandler}) => {
+  
+  return(
+    <input
+      className={`search-box ${className}`}
+      type='search' 
+      placeholder={placeholder} 
+      onChange={onChangeHandler}
+    />     
+  );
+}
+
+export default SearchBox;
